@@ -31,21 +31,28 @@ class SpaceX:
 
     def __init__(self, storedFuel):
         self.storedFuel = storedFuel
+        self.rocketList = []
 
-    def addRocket(self):
-        Rocket.
+    def addRocket(self, rocket):
+        self.rocketList.append(rocket)
 
     def refill_all(self):
-        pass
+        for rocket in self.rocketList:
+            self.storedFuel -= rocket.refill()
 
     def launch_all(self):
-        pass
+        for rocket in self.rocketList:
+            rocket.launch()
 
-    def buy_fuel(self):
-        pass
+    def buy_fuel(self, amount):
+        self.storedFuel += amount
 
     def getStats(self):
-        pass
+        self.allLaunches = 0
+        for rocket in self.rocketList:
+            self.allLaunches += rocket.launches
+        return 'rockets: {}, fuel: {}, launches: {}'.format(len(self.rocketList), self.storedFuel, self.allLaunches)
+
 
 
 
