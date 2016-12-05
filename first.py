@@ -14,5 +14,8 @@ def second_element_function(inputList):
 testList = [1, 2, 3, 4, 5]
 print(second_element_function(testList))
 
+testLongerList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+print(second_element_function(testLongerList))
+
 testFakeList = 'alma'
 print(second_element_function(testFakeList))

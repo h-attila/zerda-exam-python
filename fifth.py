@@ -21,11 +21,11 @@
 
 ################################################
 
-# The following code should work with the class:
 
 from fourth import Rocket
 
 # class implementation goes here
+
 
 class SpaceX:
 
@@ -48,12 +48,13 @@ class SpaceX:
         self.storedFuel += amount
 
     def getStats(self):
-        self.allLaunches = 0
+        allLaunches = 0
         for rocket in self.rocketList:
-            self.allLaunches += rocket.launches
-        return 'rockets: {}, fuel: {}, launches: {}'.format(len(self.rocketList), self.storedFuel, self.allLaunches)
+            allLaunches += rocket.launches
+        return 'rockets: {}, fuel: {}, launches: {}'.format(len(self.rocketList), self.storedFuel, allLaunches)
 
 
+# The following code should work with the class:
 
 
 space_x = SpaceX(100)

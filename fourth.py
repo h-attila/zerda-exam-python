@@ -42,6 +42,7 @@ class Rocket:
             fuelUsed = 5 - self.fuelLevel
             self.fuelLevel = 5
             return fuelUsed
+
         elif self.rocketType == 'falcon9':
             fuelUsed = 20 - self.fuelLevel
             self.fuelLevel = 20

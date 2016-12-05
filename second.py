@@ -6,8 +6,7 @@
 # the function should write "appleappleapple" to the file "tree.txt", and return True.
 
 
-def string_writer(fileName, inputString):
-
+def string_to_file_writer(fileName, inputString):
     if type(inputString) == str:
         try:
             inputFile = open(fileName, 'w')
@@ -21,5 +20,5 @@ def string_writer(fileName, inputString):
         raise TypeError('only string type input accepted!')
 
 
-print(string_writer('tree.txt', 'apple'))
-print(string_writer('tree.txt', 1234))          #test by fake data
+print(string_to_file_writer('tree.txt', 'apple'))
+print(string_to_file_writer('tree.txt', 1234))          # test by fake data
