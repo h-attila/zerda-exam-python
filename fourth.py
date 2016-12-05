@@ -20,7 +20,6 @@
 
 ################################################
 
-# The following code should work with the class:
 
 class Rocket:
 
@@ -52,6 +51,7 @@ class Rocket:
         return 'name: {}, fuel: {}, launches: {}'.format(self.rocketType, self.fuelLevel, self.launches)
 
 
+# The following code should work with the class:
 falcon1 = Rocket('falcon1')
 returned_falcon9 = Rocket('falcon9', 11, 1)
 
